@@ -1151,6 +1151,15 @@ a.visage:hover .visage__lien { color: var(--braise-vive); }
   .fiche-publique .photo { max-width: 18rem; margin: 0 auto; }
 }
 
+/* ---------- Criteres de recrutement ---------- */
+.criteres { list-style: none; margin: 0; padding: 0; display: grid; gap: .75rem; }
+.critere { position: relative; padding-left: 1.9rem; color: #d5dcca; line-height: 1.6; font-size: .97rem; }
+.critere::before { position: absolute; left: 0; top: -.05rem; font-size: 1rem; }
+.critere--oui::before { content: "✅"; }
+.critere--non::before { content: "❌"; }
+.appel--contact { margin-top: clamp(1.4rem, 3vw, 2.2rem); }
+.appel--contact h2 { margin: 0 0 .4rem; }
+
 /* ---------- Apparition au défilement ---------- */
 .js [data-reveal] { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
 .js [data-reveal].est-visible { opacity: 1; transform: none; }

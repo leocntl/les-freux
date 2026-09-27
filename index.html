@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=IM+Fell+English+SC&family=Special+Elite&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 <link rel="icon" type="image/svg+xml" href="logo-freux.svg?v=2">
 </head>
 <body>
@@ -184,15 +184,43 @@
     </div>
   </section>
 
-  <section class="section section--serree" id="rejoindre">
-    <div class="appel" data-reveal>
-      <div>
+  <section class="section" id="rejoindre">
+    <div class="conteneur">
+      <header class="titre-section" data-reveal>
         <p class="surligne">Nous rejoindre</p>
         <h2>Il nous manque quelques rats</h2>
-        <p>On cherche des joueurs qui savent perdre, avoir peur et jouer la scène plutôt que la gâchette. Des personnages rusés, pauvres, sans foi dans le gouvernement, et à l'aise avec la lâcheté. Les héros et les pistoleros peuvent passer leur chemin.</p>
-        <p class="appel__contact">Contact Discord : <strong>fdwares</strong></p>
+        <p>Un Freux seul ne vaut pas grand-chose. C'est bien pour ça qu'on en cherche d'autres.</p>
+      </header>
+
+      <div class="grille-2">
+        <article class="carte" data-reveal>
+          <div class="carte__tete"><span class="icone-boite"><svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><div><h3>Ce qu'on cherche</h3></div></div>
+          <ul class="criteres">
+            <li class="critere critere--oui">Des joueurs qui savent perdre : la plupart de nos scènes tournent mal pour nous, et c'est voulu.</li>
+            <li class="critere critere--oui">Des personnages pauvres, ruinés ou oubliés, qui rêvent d'un monde où chacun se sert chez les autres.</li>
+            <li class="critere critere--oui">Des gens à l'aise avec un personnage lâche et rusé, qui fuit, ment ou négocie plutôt que de mourir en héros.</li>
+            <li class="critere critere--oui">Une spécialité qui vous démarque : stratège, poseur de pièges, arnaqueur, soigneur, crocheteur, artificier.</li>
+          </ul>
+        </article>
+
+        <article class="carte" data-reveal>
+          <div class="carte__tete"><span class="icone-boite"><svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></span><div><h3>Ce qu'on ne veut pas</h3></div></div>
+          <ul class="criteres">
+            <li class="critere critere--non">Des joueurs de passage. On veut des personnages tenus sur plusieurs mois.</li>
+            <li class="critere critere--non">Des durs à cuire. À nombre égal, un Freux a peur et cherche la sortie.</li>
+            <li class="critere critere--non">Du freekill et du combat pour le combat. Nos pillages sont des scènes, pas des fusillades.</li>
+            <li class="critere critere--non">Des gens qui ne viennent que pour l'argent, ou qui manquent de respect hors jeu.</li>
+          </ul>
+        </article>
       </div>
-      <a class="bouton bouton--plein" href="#haut">Remonter <svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+
+      <div class="appel appel--contact" data-reveal>
+        <div>
+          <h2>Envie d'en être ?</h2>
+          <p class="appel__contact">Contactez <strong>fdwares</strong> en message privé sur Discord.</p>
+        </div>
+        <a class="bouton bouton--plein" href="#visages">Voir la bande <svg class="icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
     </div>
   </section>
 
