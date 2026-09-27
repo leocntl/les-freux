@@ -1136,6 +1136,21 @@ a.membre:hover .membre__visuel img { transform: scale(1.04); }
 .appel__contact { font-family: var(--ui); color: var(--texte); }
 .appel__contact strong { color: var(--braise); }
 
+/* ---------- Fiches publiques ---------- */
+a.visage { display: block; text-decoration: none; color: inherit; }
+.visage__corps { display: block; padding: 1rem 1.1rem 1.2rem; color: var(--doux); font-size: .93rem; line-height: 1.6; }
+.visage__lien { display: inline-flex; align-items: center; gap: .35rem; margin-top: .7rem; font-family: var(--ui); font-size: .85rem; color: var(--braise); }
+a.visage:hover .visage__lien { color: var(--braise-vive); }
+.visage__lien .icone { width: .95rem; height: .95rem; }
+.fiche-publique { display: grid; grid-template-columns: minmax(0, 20rem) minmax(0, 1fr); gap: clamp(1.4rem, 4vw, 3rem); align-items: start; max-width: 62rem; margin: 0 auto 2.5rem; }
+.fiche-publique .photo { margin: 0; }
+.fiche-publique .photo img { width: 100%; height: auto; display: block; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 18%; }
+.fiche-publique figcaption { font-family: var(--lecture); font-style: italic; }
+@media (max-width: 760px) {
+  .fiche-publique { grid-template-columns: 1fr; }
+  .fiche-publique .photo { max-width: 18rem; margin: 0 auto; }
+}
+
 /* ---------- Apparition au défilement ---------- */
 .js [data-reveal] { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
 .js [data-reveal].est-visible { opacity: 1; transform: none; }
