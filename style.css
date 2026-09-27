@@ -1160,6 +1160,9 @@ a.visage:hover .visage__lien { color: var(--braise-vive); }
 .appel--contact { margin-top: clamp(1.4rem, 3vw, 2.2rem); }
 .appel--contact h2 { margin: 0 0 .4rem; }
 
+.galerie--une { grid-template-columns: 1fr; max-width: 62rem; margin: 0 auto 2rem; }
+.galerie--une .galerie__item img { aspect-ratio: auto; max-height: 30rem; object-fit: cover; }
+
 /* ---------- Apparition au défilement ---------- */
 .js [data-reveal] { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
 .js [data-reveal].est-visible { opacity: 1; transform: none; }
